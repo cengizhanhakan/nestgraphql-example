@@ -1,0 +1,24 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+input CarInput {
+  brand: String!
+  name: String!
+  year: Int!
+}
+
+type CarType {
+  id: ID!
+  brand: String!
+  name: String!
+  year: Int!
+}
+
+type Mutation {
+  createItem(input: CarInput!): CarType!
+}
+
+type Query {
+  items: [CarType!]!
+}
